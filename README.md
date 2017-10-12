@@ -72,11 +72,11 @@ use the `site/static` folder. Images, font-files, etc, all go there.
 Files in the static folder ends up in the web root. So a file called `site/static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
-The `src/script/app.js` file is the entrypoint and will be built to `/dist/app.js`.
+The `src/script/app.js` file is the entrypoint and will be built to `/public/app.js`.
 
 You can use **ES6** and use both relative imports or import libraries from npm.
 
-Any CSS file directly under the `src/style/` folder will get compiled with to `/dist/{filename}.css`.
+Any CSS file directly under the `src/style/` folder will get compiled with to `/public/{filename}.css`.
 Import statements will be resolved as part of the build.
 
 ## Deployment
@@ -98,3 +98,5 @@ Now Netlify will build and deploy your site whenever you push to git.
 You can also use netlify-cli for deploying /public folder.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+
+Inspired by [Viktor Hugo Boilerplate](https://app.netlify.com/start)
