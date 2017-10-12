@@ -10,7 +10,19 @@ Setup uses [PostCSS](http://postcss.org/), [SugarSS](https://github.com/postcss/
 
 ### Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Pigment Hugo Boilerplate.
+Install Hugo using Homebrew.
+
+```bash
+brew install hugo
+```
+
+To verify your new install:
+
+```bash
+hugo version
+```
+
+You need to have the latest/LTS [node](https://github.com/tj/n) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Pigment Hugo Boilerplate.
 
 Next step, clone this repository and run:
 
@@ -39,7 +51,7 @@ To build a static version of the website inside the `/public` folder, run:
 npm run build
 ```
 
-See [package.json](https://github.com/atomtigerzoo/victor-hugo/blob/readme-updates/package.json#L7) or the included gulp file for all tasks.
+See [package.json](https://github.com/anaparunov/pigment-hugo-boilerplate/blob/master/package.json) for all tasks.
 
 ## Structure
 
