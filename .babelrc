@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": 8
+      }
+    }]
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "uglify-js": "uglify-es"
+      }
+    }]
+  ]
+}

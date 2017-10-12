@@ -1,0 +1,10 @@
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+.env
+.idea
+dist
+public
+node_modules
+npm-debug.log
+upload

@@ -1,0 +1,23 @@
+{
+  "parser": "sugarss",
+  "plugins": {
+    "postcss-easy-import": {
+      "extensions": [
+        ".sss",
+        ".css"
+      ]
+    },
+    "postcss-simple-vars": {},
+    "postcss-color-function": {},
+    "postcss-cssnext": {
+      "browsers": [
+        ">1%",
+        "firefox esr",
+        "not ie > 0"
+      ]
+    },
+    "rucksack-css": {},
+    "postcss-browser-reporter": {},
+    "postcss-reporter": {}
+  }
+}

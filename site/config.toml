@@ -1,0 +1,20 @@
+baseurl = "/"
+defaultContentLanguage = "en"
+languageCode = "en-us"
+languageLang = "en"
+title = "My new Victor-Hugo site"
+archetypeDir = "site/archetypes"
+contentDir = "site/content"
+dataDir = "site/data"
+layoutDir = "site/layouts"
+staticDir = "site/static"
+publishDir = "public"
+defaultExtension = "html"
+# defaultLayout = "post"
+enableRobotsTXT= false
+googleAnalytics = ""
+metaDataFormat = "toml"
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
