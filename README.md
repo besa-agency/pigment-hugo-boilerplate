@@ -99,4 +99,4 @@ You can also use netlify-cli for deploying /public folder.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
-Inspired by [Viktor Hugo Boilerplate](https://app.netlify.com/start)
+Inspired by [Viktor Hugo Boilerplate](https://github.com/netlify/victor-hugo)
