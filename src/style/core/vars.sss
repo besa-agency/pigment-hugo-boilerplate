@@ -1,0 +1,29 @@
+/*CSSNEXT MEDIA QUERIES*/
+
+@custom-media --small-viewport (max-width: 30em)
+@custom-media --only-medium-screen ((width >= 500px) and (width <= 1200px))
+
+/*USAGE */
+/*@media (--only-medium-screen)*/
+  /* styles for small viewport */
+
+:root
+  --mainColor: red
+
+.class
+  color: var(--mainColor)
+
+// CUSTOM SELECTORS
+@custom-selector :--button button, .button
+@custom-selector :--enter :hover, :focus
+
+:--button
+  /* styles for your buttons */
+
+:--button:--enter
+  /*
+    hover/focus styles for your button
+
+    Read more about :enter proposal
+    http://discourse.specifiction.org/t/a-common-pseudo-class-for-hover-and-focus/877
+   */

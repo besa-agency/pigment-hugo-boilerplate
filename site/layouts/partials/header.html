@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{ $.Site.BaseURL }}">
     <title>{{ $.Site.Title }}</title>
-    <link rel="stylesheet" href="main.css"/>
+    {{ if eq (getenv "HUGO_ENV") "PROD" }}
+      <link rel="stylesheet" href="/59fbe84c.css"/>
+    {{ end }}
+    {{ if eq (getenv "HUGO_ENV") "DEV" }}
+      <link rel="stylesheet" href="/main.css"/>
+    {{ end }}
   </head>
   <body>
