@@ -4,7 +4,8 @@
 .env
 .idea
 dist
-public
 node_modules
 npm-debug.log
-upload
+public
+site/static/app.js
+site/static/main.css
