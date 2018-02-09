@@ -1,7 +1,9 @@
 {{ partial "header" . }}
 
 <h1>Hugo with PostCSS and NPM Scripts</h1>
-
+{{ if eq (getenv "HUGO_ENV") "DEV" }}
+<p>You're in development!</p>
+{{ end }}</p>
 <p>
   Hooray 🎉 - you've built this with <a href="https://github.com/anaparunov/pigment-hugo-boilerplate" target="_blank">Pigment-Hugo</a>!
 </p>
