@@ -5,19 +5,17 @@
   "scripts": {
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
-    "stylelint:check": "stylelint **/*.css **/*.sss",
-    "stylelint:fix": "stylelint --fix **/*.css **/*.sss",
     "clean": "rimraf public/",
-    "dev:script": "watchify -d -t localenvify -t babelify -e src/script/app.js -o site/static/app.js",
+    "mkdirs": "mkdirp public/",
+    "dev:script": "watchify -d -t babelify -t localenvify -e src/script/app.js -o site/static/app.js",
     "dev:style": "postcss src/style/main.sss -o site/static/main.css -m -w",
-    "dev:hugo": "env HUGO_ENV='DEV' hugo server -D --config site/config.toml",
-    "dev": "run-p -s dev:script dev:style dev:hugo",
-    "build:script": "browserify -t envify -t babelify -e src/script/app.js | uglifyjs -c -m > public/app.js",
+    "dev:hugo": "env HUGO_ENV='DEV' hugo server -D --config config.toml",
+    "dev": "run-p dev:script dev:style dev:hugo",
+    "build:script": "browserify -t babelify -p [tinyify --no-flat] -e src/script/app.js > public/app.js",
     "build:style": "postcss src/style/main.sss | cleancss -O1 specialComments:0 --inline all > public/main.css",
-    "build:hugo": "env HUGO_ENV='PROD' hugo --config site/config.toml",
-    "prebuild": "npm run clean",
-    "build": "run-s -s build:hugo",
-    "postbuild": "run-s -s build:script build:style"
+    "build:hugo": "env HUGO_ENV='PROD' hugo --config config.toml",
+    "prebuild": "run-s clean mkdirs",
+    "build": "run-s build:hugo build:script build:style"
   },
   "author": "Ana Parunov",
   "license": "MIT",
@@ -68,6 +66,7 @@
     "postcss-nested": "^2.1.2",
     "postcss-reporter": "^4.0.0",
     "rucksack-css": "^0.9.1",
+    "tinyify": "^2.4.0",
     "uglify-es": "^3.3.10"
   }
 }

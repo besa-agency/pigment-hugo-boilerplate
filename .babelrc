@@ -1,18 +1,21 @@
 {
   "presets": [
     ["env", {
+      "shippedProposals": true,
       "targets": {
-        "node": 8
+        "browsers": [
+          ">0.5%",
+          "firefox esr",
+          "safari >= 7",
+          "ie >= 11",
+
+        ]
       }
     }]
   ],
   "plugins": [
     "transform-object-rest-spread",
-    ["module-resolver", {
-      "root": ["."],
-      "alias": {
-        "uglify-js": "uglify-es"
-      }
-    }]
-  ]
+    "transform-es2015-arrow-functions"
+  ],
+
 }
