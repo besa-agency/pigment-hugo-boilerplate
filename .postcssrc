@@ -9,12 +9,12 @@
     },
     "postcss-simple-vars": {},
     "postcss-color-function": {},
-    "postcss-cssnext": {
-      "browsers": [
-        ">1%",
+    "postcss-preset-env": {
+      stage: 0,
+      browsers: [
+        ">0.1%",
         "firefox esr",
-        "not ie > 0"
-      ]
+      ],
     },
     "postcss-nested":{},
     "postcss-current-selector":{},
