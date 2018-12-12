@@ -7,19 +7,21 @@
         ".css"
       ]
     },
-    "postcss-simple-vars": {},
-    "postcss-color-function": {},
     "postcss-preset-env": {
       stage: 0,
+      features: {
+        'nesting-rules': false,
+      },
       browsers: [
-        ">0.1%",
-        "firefox esr",
+        '>0.1%',
+        'firefox esr',
       ],
     },
-    "postcss-nested":{},
+    "postcss-custom-media": {},
+    "postcss-color-function": {},
+    "postcss-nesting":{},
     "postcss-current-selector":{},
     "rucksack-css": {},
-    "postcss-browser-reporter": {},
-    "postcss-reporter": {}
+    "postcss-mixins": {},
   }
 }
