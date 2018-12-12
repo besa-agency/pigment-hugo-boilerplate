@@ -1,6 +1,6 @@
 {
   "name": "pigment-hugo-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "hugo boilerplate for creating static site",
   "scripts": {
     "lint:check": "eslint .",
