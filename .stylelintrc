@@ -1,13 +1,6 @@
 {
-  "extends": "stylelint-config-sugarss-recommended",
+  "extends": "stylelint-config-standard",
   "rules": {
-    "at-rule-no-unknown": [ true, {
-      "ignoreAtRules": [
-        "extends"
-      ]
-    }],
-    "block-no-empty": null,
-    "declaration-block-no-duplicate-properties": true,
-    "declaration-no-important": false,
+    "at-rule-empty-line-before": null
   }
 }
