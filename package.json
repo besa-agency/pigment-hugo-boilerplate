@@ -37,12 +37,10 @@
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-module-resolver": "^2.7.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.24.1",
-    "babelify": "^7.3.0",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "acorn": "^6.1.1",
+    "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "clean-css-cli": "^4.3.0",
     "envify": "^4.0.0",

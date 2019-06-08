@@ -1,21 +1,9 @@
 {
   "presets": [
-    ["env", {
-      "shippedProposals": true,
+    ["@babel/preset-env", {
       "targets": {
-        "browsers": [
-          ">0.5%",
-          "firefox esr",
-          "safari >= 7",
-          "ie >= 11",
-
-        ]
+        "node": 10
       }
     }]
-  ],
-  "plugins": [
-    "transform-object-rest-spread",
-    "transform-es2015-arrow-functions"
-  ],
-
+  ]
 }
