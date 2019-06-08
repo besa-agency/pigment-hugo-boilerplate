@@ -4,7 +4,7 @@
 
 Boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [NPM Scripts](https://docs.npmjs.com/cli/run-script) as your asset pipeline.
 
-Setup uses [PostCSS](http://postcss.org/), [SugarSS](https://github.com/postcss/sugarss) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+Setup uses [SCSS](https://sass-lang.com/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 ## Usage
 
