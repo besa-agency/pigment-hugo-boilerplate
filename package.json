@@ -39,7 +39,7 @@
   "dependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "acorn": "^6.3.0",
+    "acorn": "^6.4.1",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "clean-css-cli": "^4.3.0",
